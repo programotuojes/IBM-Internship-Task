@@ -1,0 +1,20 @@
+<div class="card my-5">
+    <div class="card-body">
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Channel</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Time frame</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of broadcasts">
+                    <td>{{ data.channel }}</td>
+                    <td>{{ data.title }}</td>
+                    <td>{{ data.time }}</td>
+                </tr>
+            </tbody>
+      </table>
+    </div>
+</div>
